@@ -1,3 +1,6 @@
 f=open('running-config.cfg','r')
-y=f.read()
-print(y)
+
+z=[]
+for line in f:
+    if 'vlan' in line:
+     print(line)
